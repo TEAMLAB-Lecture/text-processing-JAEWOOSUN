@@ -66,7 +66,7 @@ def no_vowels(input_string):
     no_vowel_string = []
     
     for c in input_string:
-        if c not in ['a','e','i','o','u']:
+        if c.lower() not in ['a','e','i','o','u']:
             no_vowel_string.append(c)
 
     return ''.join(no_vowel_string)
